@@ -215,20 +215,20 @@ BOT_VER = os.environ.get("BOT_VER", "3.2.1")
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/627932d14e0bcaa9b327c.gif"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/e3e3cd9caf4ab45f0fc50.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/627932d14e0bcaa9b327c.gif"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/e3e3cd9caf4ab45f0fc50.jpg"
 )
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
-    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/627932d14e0bcaa9b327c.gif"
+    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/e3e3cd9caf4ab45f0fc50.jpg"
 )
 
 QUEUE_PIC = (
-    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/627932d14e0bcaa9b327c.gif"
+    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/e3e3cd9caf4ab45f0fc50.jpg"
 )
 
 DEFAULT = list(map(int, b64decode("ODQ0NDMyMjIw").split()))
@@ -362,7 +362,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Man-UserBot v{BOT_VER} is back up and running!**\n\n"
+        f"**ALEX-USERBOT v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
@@ -530,10 +530,10 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository ALEX - USERBOT",
-                    url="https://t.me/SharingUserbot",
+                    description="Repository ALEX-USERBOT",
+                    url="https://t.me/ygmutebabi",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**ALEX - USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Alex](https://t.me/ygmutebabi)\n✣ **Support :** @gabutanguwa\n✣ **Repository :** [ALEX-USERBOT](https://github.com/alexgansg/ALEX-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**ALEX-USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Alex](https://t.me/ygmutebabi)\n✣ **Support :** @gabutanguwa\n✣ **Repository :** [ALEX-USERBOT](https://github.com/alexgansg/ALEX-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/gabutanguwa"),
@@ -582,7 +582,7 @@ with bot:
                     description="ALEX - USERBOT | Telethon",
                     url="https://t.me/gabutanguwa",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**ALEX - USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @ygmutebabi\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**ALEX-USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @ygmutebabi\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/SharingUserbot"),
